@@ -1,4 +1,54 @@
-# Getting Started with Create React App
+# Objectives of the Application
+
+About 2 years ago, I wrote a sample application, the recipe notebook, to showcase what I knew of React.
+
+And since then, many things have changed... The stacks that I have used in the past have since undergone massive changes
+
+So I thought to myself, if I were to write this application today, what would it look like now?
+
+This app is the answer to that question.
+
+# New features compared to the last iteration
+
+## Typescript support
+
+This app is now written in Typescript, and typed accordingly.
+
+## Testing
+
+This app now has tests! I will be using Jest, React Testing Library and the events library to adhere to the following principle:
+
+> The more your tests resemble the way your software is used, the more confidence they can give you.
+
+## New packages that require new approaches
+
+### Styling library via Tailwind CSS
+
+I used to use Material-UI for the styling library, but since version 5, it has changed significantly and no longer appears to be as approachable compared to when I last used it.
+
+Now I will be using Tailwind CSS for the styling. My hope is that it style would be constrained enough to be consistent, but flexible enough for me to customise.
+
+### React Router v6
+
+Another library that underwent a breaking change while I was focused elsewhere. Also part of the reason why I would like to try tailwind; It seems easier to add header and drawer components now.
+
+### Redux via the toolkit
+
+Every time I go to the redux site, they always push their toolkit. Alright, alright, I will use the toolkit. I just hope I don't confuse this with vanilla react redux.
+
+The toolkit includes the following, nicely configured: thunk, Immer, and a logger. Let's hope I can get used to it.
+
+## Other improvements
+
+Of course my original application had more room for improvements. Let's see how many I can cram into it.
+
+# What I did not manage to do in the end
+
+## Use a custom bundler
+
+It's currently beyond my ability to do so. The alternatives (Snowpack, then Vite) are not ready enough for me to use them out of the box. There's too much to learn...
+
+# Running the app
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
