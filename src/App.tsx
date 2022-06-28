@@ -1,11 +1,11 @@
-import { Link, Outlet } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
+
+import Header from './components/Header';
 
 const App = () => {
   return (
     <div>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
-      <Link to="/sampleroute1">Sample 1</Link>
-      <Link to="/sampleroute2">Sample 2</Link>
+      <Header />
       <Outlet />
     </div>
   );
