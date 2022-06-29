@@ -4,6 +4,9 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import { Provider } from 'react-redux';
+import store from './store';
+
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import SampleRoute1 from './routes/SampleRoute1';
 import SampleRoute2 from './routes/SampleRoute2';
@@ -14,15 +17,17 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<App />}>
-          <Route path="sampleroute1" element={<SampleRoute1 />} />
-          <Route path="sampleroute2" element={<SampleRoute2 />} />
-          <Route index element={<Landing />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <Provider store={store}>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<App />}>
+            <Route path="sampleroute1" element={<SampleRoute1 />} />
+            <Route path="sampleroute2" element={<SampleRoute2 />} />
+            <Route index element={<Landing />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </Provider>
   </React.StrictMode>
 );
 
